@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
     private fun showMainFragment() {
         supportFragmentManager.commit {
             add(R.id.fragment_container, MainFragment.newInstance())
-            //addToBackStack(null)
+            //addToBackStack(null)  // 戻るキー用にスタック
         }
     }
 }
